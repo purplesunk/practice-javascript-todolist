@@ -42,8 +42,7 @@ ul {
   padding: 2rem;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   display: grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: auto auto;
+  grid-template-columns: minmax(50%, 80%) min-content;
 }
 
 .add-task--label {
@@ -68,6 +67,7 @@ ul {
   text-transform: uppercase;
   font-weight: bold;
   transition: var(--btn-transition);
+  white-space: nowrap;
 }
 
 .task-list {
